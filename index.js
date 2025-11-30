@@ -19,7 +19,7 @@ app.get('/', (req, res) => {
     console.log(req.query);
 
     if(req.query.busca == null){
-      res.send('home',{});
+      res.render('home',{});
     }else{
       res.send('Você buscou: ' +req.query.busca);
     }
